@@ -11,7 +11,7 @@ spec:
             - name: "echo"
     - name: "second-stage"
       triggeredOn:
-        - event: "first-stage.mysequence.finished"
+        - event: "sh.keptn.event.first-stage.mysequence.finished"
       sequences:
         - name: "mysequence"
           tasks:
