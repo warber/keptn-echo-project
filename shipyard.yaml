@@ -10,10 +10,10 @@ spec:
           tasks:
             - name: "echo"
     - name: "second-stage"
-      triggeredOn:
-        - event: "sh.keptn.event.first-stage.mysequence.finished"
       sequences:
         - name: "mysequence"
+          triggeredOn:
+            - event: "first-stage.mysequence.finished"
           tasks:
             - name: "echo"
             - name: "echo"  
