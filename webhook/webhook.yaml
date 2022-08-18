@@ -1,0 +1,15 @@
+apiVersion: webhookconfig.keptn.sh/v1beta1
+kind: WebhookConfig
+metadata:
+  name: webhook-configuration
+spec:
+  webhooks:
+    - type: sh.keptn.event.1-echo-mysequence-first-stage.triggered
+      requests:
+        - url: https://deelay.me/20000/www.google.at
+          payload: ""
+          headers: []
+          method: GET
+      subscriptionID: 3c6bc033-6d5b-4f52-9538-df5611c64991
+      sendFinished: true
+      sendStarted: true
