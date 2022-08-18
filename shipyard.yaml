@@ -8,12 +8,12 @@ spec:
       sequences:
         - name: "mysequence"
           tasks:
-            - name: "echo"
+            - name: "1-echo-mysequence-first-stage"
     - name: "second-stage"
       sequences:
         - name: "mysequence"
           triggeredOn:
             - event: "first-stage.mysequence.finished"
           tasks:
-            - name: "echo"
-            - name: "echo"  
+            - name: "1-echo-mysequence-second-stage"
+            - name: "2-echo-mysequence-second-stage"  
