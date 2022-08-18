@@ -22,3 +22,12 @@ spec:
       subscriptionID: 1689b085-33f8-420a-9373-a8d938231194
       sendFinished: false
       sendStarted: false
+    - type: sh.keptn.event.2-echo-mysequence-second-stage.triggered
+      requests:
+        - url: https://deelay.me/20000/www.google.at
+          payload: ""
+          headers: []
+          method: GET
+      subscriptionID: 75e5a6aa-b287-4765-a9e2-512f17164b7e
+      sendFinished: true
+      sendStarted: true
