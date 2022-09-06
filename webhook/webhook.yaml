@@ -4,15 +4,6 @@ metadata:
   name: webhook-configuration
 spec:
   webhooks:
-    - type: sh.keptn.event.echo1.triggered
-      requests:
-        - url: https://deelay.me/10000/www.google.at
-          payload: ""
-          headers: []
-          method: GET
-      subscriptionID: 2104b35d-cf2d-4178-b5cc-c0b0f3b27999
-      sendFinished: true
-      sendStarted: true
     - type: sh.keptn.event.echo2.triggered
       requests:
         - url: https://deelay.me/10000/www.google.at
