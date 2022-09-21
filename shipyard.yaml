@@ -9,11 +9,3 @@ spec:
         - name: "mysequence"
           tasks:
             - name: "echo"
-    - name: "second-stage"
-      sequences:
-        - name: "mysequence"
-          triggeredOn:
-            - event: "first-stage.mysequence.finished"
-          tasks:
-            - name: "echo"
-            - name: "echo"  
